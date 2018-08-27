@@ -1,0 +1,7 @@
+<%= form_tag faces_path, :multipart => true %>
+<%= file_field_tag 'upload[file]' %>
+<%= submit_tag "Upload" %>
+
+<% if @image then %>
+<img src="/<%= @image %>">
+<% end %>
